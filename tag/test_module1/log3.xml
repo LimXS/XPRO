@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="0" name="pytest" skips="0" tests="5" time="0.018"><testcase classname="test_one.Testclass" file="test_one.py" line="49" name="test_four" time="0.000999927520752"><system-out>setup_session called.
+setup_class called.
+Test_4 called.
+</system-out></testcase><testcase classname="test_one.Testclass" file="test_one.py" line="52" name="test_five" time="0.000999927520752"><system-out>Test_5 called.
+</system-out></testcase><testcase classname="test_one.Testclass2" file="test_one.py" line="57" name="test_four2" time="0.0019998550415"><system-out>Test_42 called.
+</system-out></testcase><testcase classname="test_one.Testclass2" file="test_one.py" line="60" name="test_five2" time="0.00100016593933"><system-out>Test_52 called.
+</system-out></testcase><testcase classname="test_one.Testclass2" file="test_one.py" line="63" name="test_six2" time="0.000999927520752"><system-out>test_six2 called.
+</system-out></testcase></testsuite>
