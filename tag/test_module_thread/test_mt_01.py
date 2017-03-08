@@ -22,7 +22,9 @@ class Testclass():
         print ("teardown_class----->>")
 
     def setup_method(self):
+        #从flag文件获信息，空余线程执行当前任务
         self.nowflag=browser.nowstate("test_mg_01")
+        #根据线程名字分配执行任务，如Thread-1 A电脑  如Thread-2 B电脑
         self.driver=browser.startBrowser2xml(self.nowflag)
         browser.set_up(self.driver)
 

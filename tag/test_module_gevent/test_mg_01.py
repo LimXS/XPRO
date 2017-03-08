@@ -22,6 +22,7 @@ class Testclass():
         print ("teardown_class----->>")
 
     def setup_method(self):
+
         self.nowflag=browser.nowstate("test_mg_01")
         self.driver=browser.startBrowser2xml(self.nowflag)
         browser.set_up(self.driver)

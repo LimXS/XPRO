@@ -67,7 +67,7 @@ class workerManger:
     def add_job(self, callable, *args, **kwds):
          self.tagQueue.put((callable, args, kwds))  # 向工作队列中加入请求
 
-
+#传入的是任务执行命令 获取空余线程名字 用于分配任务
 def download_file(url ):
     lock.acquire()
     print threading.currentThread().getName()
@@ -76,12 +76,13 @@ def download_file(url ):
 
     thname=str(threading.currentThread().getName())
     #name=str(threading.currentThread().getName())
+    #任务使用的线程写入flag文件，便于提取
     f=open(r"D:\tag\tagconfig\flag",'a')
     f.write(url+":")
     f.write(str(thname)+",")
     f.close()
     lock.release()
-
+    #执行测试用例
     pytest.main(url)
 
 def download_file2(url) :
